@@ -1,0 +1,46 @@
+{
+  "name": "@yasp/asset-amount",
+  "version": "0.0.0",
+  "description": "TS package template",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "lint": "eslint .",
+    "clean": "rm -rf ./dist && rm -rf node_modules"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/big.js": "^6.1.6",
+    "@types/bn.js": "^5.1.1",
+    "@types/jest": "^28.1.6",
+    "@types/node": "^18.6.4",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.2.2"
+  },
+  "lint-staged": {
+    "./src/**/*.{ts,js}": [
+      "npm run lint:fix",
+      "npm run format"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "author": "YaspFi",
+  "license": "MIT",
+  "dependencies": {
+    "big.js": "^6.2.1",
+    "bn.js": "^5.2.1",
+    "decimal.js-light": "^2.5.1",
+    "toformat": "^2.0.0"
+  }
+}
