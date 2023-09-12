@@ -1,11 +1,11 @@
-import { AssetAmount, splitNumber } from './amount'
-import { Fraction } from './fraction'
+import { AssetAmount, splitNumber } from "./amount";
+import { Fraction } from "./fraction";
 
-import type { BigNumberLike, NumberLike } from './types'
-import * as assetAmountConstants from './constant'
-import * as assetAmountCompare from './compare'
-import toFraction from './to-fraction'
-import toBN from './to-BN'
+import type { BigNumberLike, NumberLike } from "./types";
+import * as assetAmountConstants from "./constant";
+import * as assetAmountCompare from "./compare";
+import toFraction from "./to-fraction";
+import toBN from "./to-BN";
 
 export {
   toFraction,
@@ -15,6 +15,6 @@ export {
   Fraction,
   assetAmountCompare,
   assetAmountConstants,
-  BigNumberLike,
-  NumberLike,
-}
+};
+
+export type { BigNumberLike, NumberLike };
